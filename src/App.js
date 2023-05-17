@@ -16,9 +16,9 @@ const App = () => {
   if(tours.length === 0){
 
     return (
-      <div>
-        <h3>No Tours Left</h3>
-        <button onClick={()=>setTours(data)}>Refresh</button>
+       <div className="flex flex-col my-14 items-center justify-center ">
+        <h3 className="text-2xl text-black mt-8">No Tours Left</h3>
+        <button className="font-large py-4 px-8 bg-blue-400" onClick={()=>setTours(data)}>Refresh</button>
       </div>
     )
   }
